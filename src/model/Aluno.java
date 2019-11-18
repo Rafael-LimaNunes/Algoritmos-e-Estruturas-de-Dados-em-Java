@@ -1,3 +1,5 @@
+package model;
+
 public class Aluno {
     private String nome;
     public String getNome() {
@@ -9,7 +11,7 @@ public class Aluno {
     public String toString() {
         return this.nome;
     }
-    public boolean equals(Object o) {
+    public boolean equals(Aluno o) {
         Aluno outro = (Aluno)o;
         return this.nome.equals(outro.nome);
     }

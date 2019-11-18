@@ -1,3 +1,7 @@
+package testes;
+import model.Aluno;
+import vetores.Vetor;
+
 public class TesteAdicionaNoFIm {
     public static void main(String[] args) {
         Aluno a1 = new Aluno();

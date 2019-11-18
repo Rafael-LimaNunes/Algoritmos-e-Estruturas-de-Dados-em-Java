@@ -1,3 +1,7 @@
+package testes;
+import vetores.Vetor;
+import model.Aluno;
+
 public class TestePegaAlunoPorPosicao    {
     public static void main(String[] args) {
         Aluno a1 = new Aluno();
@@ -7,8 +11,8 @@ public class TestePegaAlunoPorPosicao    {
         Vetor lista = new Vetor();
         lista.adiciona(a1);
         lista.adiciona(a2);
-        Aluno aluno1 = lista.pega(0);
-        Aluno aluno2 = lista.pega(1);
+        Aluno aluno1 = (Aluno) lista.pega(0);
+        Aluno aluno2 = (Aluno) lista.pega(1);
         System.out.println(aluno1);
         System.out.println(aluno2);
 
